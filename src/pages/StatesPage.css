@@ -1,0 +1,16 @@
+.states-page {
+  padding: 40px 50px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #1B1464;
+  margin-bottom: 40px;
+}
+
+.states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
