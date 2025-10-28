@@ -16,7 +16,7 @@ const HomePage = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(timer);
   }, []);
@@ -27,15 +27,15 @@ const HomePage = () => {
         <div
           key={index}
           className="background-image"
-          style={{ 
+          style={{
             backgroundImage: `url(${image})`,
             opacity: index === currentImageIndex ? 1 : 0
           }}
         />
       ))}
-      
+
       <div className="overlay"></div>
-      
+
       <div className="content">
         <motion.h1 initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
           Discover the Soul of India
@@ -43,8 +43,9 @@ const HomePage = () => {
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
           An interactive journey through the vibrant cultures, traditions, and flavors of every Indian state.
         </motion.p>
-        <Link to="/states">
-          <motion.button 
+        {/* --- Link now points to Login page --- */}
+        <Link to="/login">
+          <motion.button
             whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px #FF6B00" }}
             whileTap={{ scale: 0.9 }}
             className="explore-button"

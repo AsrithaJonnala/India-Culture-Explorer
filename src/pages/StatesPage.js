@@ -20,7 +20,7 @@ const StatesPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h1 className="page-title">Explore India</h1>
+      <h1 className="page-title">Explore South India</h1>
       <motion.div 
         className="states-grid"
         variants={containerVariants}

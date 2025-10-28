@@ -68,3 +68,41 @@
 .navbar-links a.active-link::after {
   transform: scaleX(1);
 }
+/* src/components/Navbar.css */
+
+/* ... existing styles ... */
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 0;
+  font-family: inherit; /* Ensure it uses the same font */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+  color: #FF6B00; /* Use your theme color */
+}
+
+/* Optional: Add underline effect like NavLink */
+.logout-button::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FF6B00;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.logout-button:hover::after {
+   transform: scaleX(1);
+}
