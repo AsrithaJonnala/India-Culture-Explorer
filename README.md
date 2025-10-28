@@ -1,6 +1,3 @@
-Okay, here is the detailed `README.md` content again, with all image references removed as requested. You can copy and paste this directly into your GitHub `README.md` file.
-
-````markdown
 # India-Culture-Explorer 🇮🇳✨
 
 A visually immersive React web application designed to explore the rich cultural diversity of Indian states, now featuring user authentication. This project demonstrates modern front-end development practices with React, connecting to a separate Node.js backend.
@@ -100,4 +97,3 @@ To get both the frontend and backend running locally, follow these steps.
     npm start
     ```
     Open [http://localhost:3000](http://localhost:3000) to view it in your browser. You can now register and log in to explore the states!
-````
